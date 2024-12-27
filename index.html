@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isur</title>
+    <meta name="description" content="Boilerplate built with Astro using React and Tailwind CSS">
+    <meta name="author" content="Emma">
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="astro-view-transitions-enabled" content="true">
+    <meta name="astro-view-transitions-fallback" content="animate">
+    <link rel="stylesheet" href="/_astro/contactanos.DoJ1uisL.css" />
+    <style>
+        .astro-route-announcer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            overflow: hidden;
+            white-space: nowrap;
+            width: 1px;
+            height: 1px
+        }
+
+        #go-top[data-astro-cid-3arzalm5],
+        #go-top[data-astro-cid-3arzalm5].hidden {
+            display: none
+        }
+
+        #go-top[data-astro-cid-3arzalm5]:not(.hidden) {
+            display: flex
+        }
+    </style>
+    <script type="module" src="/_astro/hoisted.DYgFSnDh.js"></script>
+</head>
+
+<body id="main-content" class="min-h-screen w-full bg-[#F2F3F5]">
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="mx-auto px-4 md:max-w-4xl md:px-8 lg:max-w-screen-xl ">
+            <div class="flex items-center justify-between" style="height:70px">
+                <a href="/" class="select-none undefined">
+                    <img src="/assets/images/brand/logo.svg" alt="Isur" class="h-[46px] w-auto md:h-[50px]"
+                        loading="eager">
+                </a>
+                <nav>
+                    <div class="hidden gap-2 md:flex">
+                        <ul class="flex gap-2">
+                            <li>
+                                <a rel="noreferrer noopener" href="/" class="nav-link nav-link-ltr ">Inicio </a>
+                            </li>
+                            <li>
+                                <a rel="noreferrer noopener" href="/empresa/" class="nav-link nav-link-ltr ">Empresa
+                                </a>
+                            </li>
+                            <li>
+                                <a rel="noreferrer noopener" href="/productos/"
+                                    class="nav-link nav-link-ltr nav-link-active">Productos </a>
+                            </li>
+                            <li>
+                                <a rel="noreferrer noopener" href="/contactanos/"
+                                    class="nav-link nav-link-ltr ">Contactanos </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block md:hidden">
+                        <style>
+                            astro-island,
+                            astro-slot,
+                            astro-static-slot {
+                                display: contents
+                            }
+                        </style>
+                        <script>
+                            (() => {
+                                var e = async t => {
+                                    await (await t())()
+                                }
+                                    ;
+                                (self.Astro || (self.Astro = {})).load = e;
+                                window.dispatchEvent(new Event("astro:load"));
+                            }
+                            )();
+                            ; (() => {
+                                var b = Object.defineProperty;
+                                var f = (c, o, i) => o in c ? b(c, o, {
+                                    enumerable: !0,
+                                    configurable: !0,
+                                    writable: !0,
+                                    value: i
+                                }) : c[o] = i;
+                                var l = (c, o, i) => (f(c, typeof o != "symbol" ? o + "" : o, i),
+                                    i);
+                                var p;
+                                {
+                                    let c = {
+                                        0: t => m(t),
+                                        1: t => i(t),
+                                        2: t => new RegExp(t),
+                                        3: t => new Date(t),
+                                        4: t => new Map(i(t)),
+                                        5: t => new Set(i(t)),
+                                        6: t => BigInt(t),
+                                        7: t => new URL(t),
+                                        8: t => new Uint8Array(t),
+                                        9: t => new Uint16Array(t),
+                                        10: t => new Uint32Array(t)
+                                    }
+                                        , o = t => {
+                                            let [e, r] = t;
+                                            return e in c ? c[e](r) : void 0
+                                        }
+                                        , i = t => t.map(o)
+                                        , m = t => typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map(([e, r]) => [e, o(r)]));
+                                    customElements.get("astro-island") || customElements.define("astro-island", (p = class extends HTMLElement {
+                                        constructor() {
+                                            super(...arguments);
+                                            l(this, "Component");
+                                            l(this, "hydrator");
+                                            l(this, "hydrate", async () => {
+                                                var d;
+                                                if (!this.hydrator || !this.isConnected)
+                                                    return;
+                                                let e = (d = this.parentElement) == null ? void 0 : d.closest("astro-island[ssr]");
+                                                if (e) {
+                                                    e.addEventListener("astro:hydrate", this.hydrate, {
+                                                        once: !0
+                                                    });
+                                                    return
+                                                }
+                                                let r = this.querySelectorAll("astro-slot")
+                                                    , a = {}
+                                                    , h = this.querySelectorAll("template[data-astro-template]");
+                                                for (let n of h) {
+                                                    let s = n.closest(this.tagName);
+                                                    s != null && s.isSameNode(this) && (a[n.getAttribute("data-astro-template") || "default"] = n.innerHTML,
+                                                        n.remove())
+                                                }
+                                                for (let n of r) {
+                                                    let s = n.closest(this.tagName);
+                                                    s != null && s.isSameNode(this) && (a[n.getAttribute("name") || "default"] = n.innerHTML)
+                                                }
+                                                let u;
+                                                try {
+                                                    u = this.hasAttribute("props") ? m(JSON.parse(this.getAttribute("props"))) : {}
+                                                } catch (n) {
+                                                    let s = this.getAttribute("component-url") || "<unknown>"
+                                                        , y = this.getAttribute("component-export");
+                                                    throw y && (s += ` (export ${y})`),
+                                                    console.error(`[hydrate] Error parsing props for component ${s}`, this.getAttribute("props"), n),
+                                                    n
+                                                }
+                                                await this.hydrator(this)(this.Component, u, a, {
+                                                    client: this.getAttribute("client")
+                                                }),
+                                                    this.removeAttribute("ssr"),
+                                                    this.dispatchEvent(new CustomEvent("astro:hydrate"))
+                                            }
+                                            );
+                                            l(this, "unmount", () => {
+                                                this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount"))
+                                            }
+                                            )
+                                        }
+                                        disconnectedCallback() {
+                                            document.removeEventListener("astro:after-swap", this.unmount),
+                                                document.addEventListener("astro:after-swap", this.unmount, {
+                                                    once: !0
+                                                })
+                                        }
+                                        connectedCallback() {
+                                            if (!this.hasAttribute("await-children") || document.readyState === "interactive" || document.readyState === "complete")
+                                                this.childrenConnectedCallback();
+                                            else {
+                                                let e = () => {
+                                                    document.removeEventListener("DOMContentLoaded", e),
+                                                        r.disconnect(),
+                                                        this.childrenConnectedCallback()
+                                                }
+                                                    , r = new MutationObserver(() => {
+                                                        var a;
+                                                        ((a = this.lastChild) == null ? void 0 : a.nodeType) === Node.COMMENT_NODE && this.lastChild.nodeValue === "astro:end" && (this.lastChild.remove(),
+                                                            e())
+                                                    }
+                                                    );
+                                                r.observe(this, {
+                                                    childList: !0
+                                                }),
+                                                    document.addEventListener("DOMContentLoaded", e)
+                                            }
+                                        }
+                                        async childrenConnectedCallback() {
+                                            let e = this.getAttribute("before-hydration-url");
+                                            e && await import(e),
+                                                this.start()
+                                        }
+                                        start() {
+                                            let e = JSON.parse(this.getAttribute("opts"))
+                                                , r = this.getAttribute("client");
+                                            if (Astro[r] === void 0) {
+                                                window.addEventListener(`astro:${r}`, () => this.start(), {
+                                                    once: !0
+                                                });
+                                                return
+                                            }
+                                            Astro[r](async () => {
+                                                let a = this.getAttribute("renderer-url")
+                                                    , [h, { default: u }] = await Promise.all([import(this.getAttribute("component-url")), a ? import(a) : () => () => { }
+                                                    ])
+                                                    , d = this.getAttribute("component-export") || "default";
+                                                if (!d.includes("."))
+                                                    this.Component = h[d];
+                                                else {
+                                                    this.Component = h;
+                                                    for (let n of d.split("."))
+                                                        this.Component = this.Component[n]
+                                                }
+                                                return this.hydrator = u,
+                                                    this.hydrate
+                                            }
+                                                , e, this)
+                                        }
+                                        attributeChangedCallback() {
+                                            this.hydrate()
+                                        }
+                                    }
+                                        ,
+                                        l(p, "observedAttributes", ["props"]),
+                                        p))
+                                }
+                            }
+                            )();
+                        </script>
+                        <astro-island uid="1ywPgv" prefix="r55" component-url="/_astro/MobileMenu.CYr7mCUD.js"
+                            component-export="MobileMenu" renderer-url="/_astro/client.DtQD7m52.js"
+                            props="{&quot;pathname&quot;:[0,&quot;/productos/&quot;]}" ssr="" client="load"
+                            opts="{&quot;name&quot;:&quot;MobileMenu&quot;,&quot;value&quot;:true}" await-children="">
+                            <button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xs text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground size-10"
+                                type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r55R0:"
+                                data-state="closed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-menu !size-6 text-primary">
+                                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                                </svg>
+                            </button>
+                            <!--astro:end-->
+                        </astro-island>
+                    </div>
+                </nav>
+                <a href="/blog/"
+                    class="hidden md:inline-flex inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xs text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-rss">
+                        <path d="M4 11a9 9 0 0 1 9 9"></path>
+                        <path d="M4 4a16 16 0 0 1 16 16"></path>
+                        <circle cx="5" cy="19" r="1"></circle>
+                    </svg>
+                    BLOG
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="relative">
+            <div>
+                <img src="/_astro/banner-7.BZVnMfQl_ChbJa.webp" alt="seccion-de-Productos"
+                    class="h-[300px] w-full object-cover md:h-[380px]" width="1920" height="850" loading="lazy"
+                    decoding="async">
+            </div>
+            <div
+                class="mx-auto px-4 md:max-w-4xl md:px-8 lg:max-w-screen-xl absolute inset-0 flex flex-col items-start justify-center text-center">
+                <h2 class="mb-2 text-4xl font-medium text-white lg:text-5xl">Productos </h2>
+                <nav aria-label="breadcrumb">
+                    <ol
+                        class="flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5">
+                        <li class="inline-flex items-center gap-1.5">
+                            <a class="transition-colors text-white hover:text-white hover:underline lg:text-lg"
+                                href="/">Inicio
+                            </a>
+                        </li>
+                        <li role="presentation" aria-hidden="true"
+                            class="[&amp;&gt;svg]:w-3.5 [&amp;&gt;svg]:h-3.5 text-white lg:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg>
+                        </li>
+                        <li class="inline-flex items-center gap-1.5">
+                            <span role="link" aria-disabled="true" aria-current="page"
+                                class="font-normal text-white lg:text-lg">Productos</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="py-14 lg:py-18 px-6 lg:px-12 undefined">
+            <div class="mb-8 space-y-3 lg:space-y-4">
+                <div
+                    class="mx-auto font-semibold flex max-w-lg xl:max-w-xl flex-col items-center justify-center space-y-2 text-center text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
+                    <h2>Nuestros Productos </h2>
+                    <img src="/assets/images/hr.png" alt="hr" class="h-[0.4rem] w-auto">
+                </div>
+                <div class="mx-auto text-center !text-[15px] text-[#747474] md:!text-base lg:!text-[17px] max-w-3xl">
+                    <p>De todo tipo de protección personal para tu empresa. </p>
+                </div>
+            </div>
+            <div>
+                <div class="mx-auto max-w-xs md:max-w-lg lg:max-w-4xl">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Botin Fenix</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Steelpro Safety</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/botin-fenix._tbIAkS__Z19teBV.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="432"
+                                        height="382" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Botin Tusson NT450
+                                    Nazca</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Steelpro Safety</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/botin-tusson-nt-450-nazca.DUjT2_U2_1eKnG5.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="410"
+                                        height="355" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Casco Milenium Class
+                                    Full Brim</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Libus</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/casco-milenium-class-full-brim.eCbXSJeu_1VvoVv.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="491"
+                                        height="372" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Casco Milenium Class
+                                </div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Libus</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/casco-milenium-class.Cb62EKO2_1VDOaG.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="539"
+                                        height="458" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Chaleco de seguridad
+                                </div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Mpro</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/chaleco-de-seguridad.BnbNBcvC_1ncPlL.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="332"
+                                        height="467" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Detector Multigas
+                                    Altair</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Msa</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/detector-multigas-altair.CzyxHpMj_Z146pUQ.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="291"
+                                        height="378" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Equipo de respiracion
+                                    autonoma G1</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Msa</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/equipo-respiracion-autonoma-g1.BkLoYqAk_Z16fmDm.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="365"
+                                        height="426" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Guante Cut 5 Latex
+                                </div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Steelpro Safety</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/guante-cut-5-latex.t4L9n1BS_ZvqdXm.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="418"
+                                        height="454" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Mameluco Termico
+                                </div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Mpro</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/mameluco-termico.aVV-JuA9_25jLQV.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="293"
+                                        height="619" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Mascara Strong Welder
+                                    1000</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Libus</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/mascara-strong-welder-1000.BO1MjynS_Z27laVQ.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="322"
+                                        height="351" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Mascarilla cara
+                                    completa 9000</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Libus</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/mascarilla-cara-completa-9000.BXcKyHZL_Z1WjFqK.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="402"
+                                        height="371" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Respirador Advantage
+                                    200ls</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Msa</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/respirador-advantage-200ls.DC56bWpX_Z10gtFO.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="492"
+                                        height="378" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Traje descartable
+                                    SteelPro</div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Steelpro Safety</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/traje-descartable-steel-pro.DEg28WqB_Z1h2Y8R.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="302"
+                                        height="731" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Traje Alphatec 2300
+                                </div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Ansell</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/traje-alphatec-2300.Byn2XYJC_2gKACf.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="308"
+                                        height="693" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rounded-xs bg-card text-card-foreground group col-span-12 flex flex-col items-center justify-center border-2 border-gray-100 shadow-sm transition-colors duration-300 md:col-span-6 lg:col-span-4 lg:hover:border-[#7d7d7d]">
+                            <div class="flex flex-col space-y-1.5 p-6">
+                                <div class="font-semibold leading-none tracking-tight text-center">Traje Tela Taslan
+                                </div>
+                                <div class="text-sm text-muted-foreground text-center">Proveedor: Mpro</div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <div>
+                                    <img src="/_astro/traje-tela-taslan.BmnYKf_W_Z19KNt6.webp" alt="Isur"
+                                        class="animation-group-scale mx-auto h-52 w-auto object-contain" width="328"
+                                        height="719" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-14 lg:py-18 px-6 lg:px-12 undefined">
+            <div class="mb-8 space-y-3 lg:space-y-4">
+                <div
+                    class="mx-auto font-semibold flex max-w-lg xl:max-w-xl flex-col items-center justify-center space-y-2 text-center text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
+                    <h2>Nuestros Proveedores </h2>
+                    <img src="/assets/images/hr.png" alt="hr" class="h-[0.4rem] w-auto">
+                </div>
+                <div class="mx-auto text-center !text-[15px] text-[#747474] md:!text-base lg:!text-[17px] max-w-3xl">
+                    <p>Trabajamos con proveedores reconocidos internacionalmente. </p>
+                </div>
+            </div>
+            <div class="mx-auto max-w-md lg:max-w-4xl">
+                <div class="grid grid-cols-12 gap-6 lg:gap-8">
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/libus.DrHjccHZ_1KsiKL.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="673" height="269" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/msa.DnB_p7PY_ZDzqfE.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="373" height="163" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/steelpro.DzkC-6Rt_JrYqo.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="439" height="162" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/coverguard.BeVnUTA6_F9PPI.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="511" height="127" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/mpro.Byq3KNRS_cdeyl.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="475" height="160" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/latchways.DW17kXmr_1OT8qC.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="712" height="146" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="col-span-6 flex flex-col items-center justify-center gap-3 lg:col-span-3">
+                        <img src="/_astro/ansell.Cz78Azha_Z1wmLNO.webp" alt="Isur"
+                            class="animation-scale h-12 w-auto md:h-16" width="514" height="206" loading="lazy"
+                            decoding="async">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rounded-xs bg-card border text-card-foreground py-14 lg:py-18 px-6 lg:px-12 undefined">
+            <div class="mb-8 space-y-3 lg:space-y-4">
+                <div
+                    class="mx-auto font-semibold flex max-w-lg xl:max-w-xl flex-col items-center justify-center space-y-2 text-center text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
+                    <h2>Nuestra ubicacion </h2>
+                    <img src="/assets/images/hr.png" alt="hr" class="h-[0.4rem] w-auto">
+                </div>
+                <div
+                    class="mx-auto text-center !text-[15px] text-[#747474] md:!text-base lg:!text-[17px] max-w-3xl undefined">
+                    <p>Ubicanos en la siguiente dirección </p>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.1190180908197!2d-71.34678932377732!3d-17.6445211712296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91445ba2ba9f950f%3A0x6c5383568efd2b93!2sISUR%20-%20Corporaci%C3%B3n%20Isur%20Implementos%20de%20Seguridad!5e0!3m2!1sen!2spe!4v1734552276481!5m2!1sen!2spe"
+                width="100%" height="550" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="relative">
+            <div class="relative">
+                <img src="/_astro/banner-3.YelVY_Py_Z1IxbH2.webp" alt="newsletter-image"
+                    class="h-[300px] w-full object-cover md:h-[380px]" width="1920" height="1080" loading="lazy"
+                    decoding="async">
+                <div class="absolute inset-0 bg-black/30"></div>
+            </div>
+            <div
+                class="mx-auto px-4 md:max-w-4xl md:px-8 lg:max-w-screen-xl absolute inset-0 flex flex-col items-start justify-center text-center">
+                <div class="relative mx-auto flex flex-col items-center justify-between gap-6 lg:mx-0 lg:flex-row">
+                    <div class="w-full max-w-lg lg:w-3/5 lg:max-w-max">
+                        <p
+                            class="mx-auto text-center text-2xl font-medium text-white lg:mx-0 lg:text-start lg:text-3xl lg:leading-[45px]">
+                            Contamos con soluciones y servicios estratégicos para la minería
+                        </p>
+                    </div>
+                    <div class="flex w-full items-center justify-center lg:w-2/5">
+                        <a href="/contactanos/"
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xs text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&#38;_svg]:pointer-events-none [&#38;_svg]:size-4 [&#38;_svg]:shrink-0 bg-primary text-primary-foreground shadow h-9 uppercase lg:text-lg font-light py-6 lg:py-7 px-10 lg:px-12 hover:bg-white hover:text-paragraph">Contáctanos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-[#292929]">
+        <div class="mx-auto px-4 md:max-w-4xl md:px-8 lg:max-w-screen-xl ">
+            <div class="grid grid-cols-12 py-10 md:py-14">
+                <!-- Company Information -->
+                <div class="col-span-12 mb-10 space-y-4 md:col-span-6 md:mb-0 lg:col-span-4">
+                    <a href="/" class="select-none undefined">
+                        <img src="/assets/images/brand/logo-dark.svg" alt="Isur" class="h-[46px] w-auto md:h-[50px]"
+                            loading="eager">
+                    </a>
+                    <p class="text-[15px] text-white">ISUR es una empresa peruana que se dedica a vender y distribuir
+                        equipos de protección personal y seguridad industrial, entregando una
+                        garantia de fabrica a todos sus productos.
+                    </p>
+                    <a href="/empresa/"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xs text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&#38;_svg]:pointer-events-none [&#38;_svg]:size-4 [&#38;_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-8">MAS
+                        INFORMACIÓN
+                    </a>
+                </div>
+                <div class="hidden md:col-span-6 lg:col-span-4 lg:block"></div>
+                <div class="col-span-12 space-y-3 pl-0 text-white md:col-span-6 md:pl-6 lg:col-span-4 lg:pl-0">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:gap-6 md:flex-col md:gap-3 xl:flex-row xl:gap-6">
+                        <div class="space-y-3">
+                            <!-- Address -->
+                            <div>
+                                <p class="mb-1 text-[15px] font-bold uppercase text-primary brightness-125">Dirección
+                                </p>
+                                <p class="text-[14px]">Calle Zepita 533 Ilo, Peru</p>
+                            </div>
+                            <!-- Contact -->
+                            <div>
+                                <p class="mb-1 text-[15px] font-bold uppercase text-primary brightness-125">Contacto
+                                </p>
+                                <div class="flex flex-col space-y-0.5 text-[14px]">
+                                    <div class="inline-flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                        (Admin) +51 988885418
+                                    </div>
+                                    <div class="inline-flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                        (Ventas) +51 935632627
+                                    </div>
+                                    <a href="mailto:ventas@isur.com.pe" class="inline-flex gap-2" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                        ventas@isur.com.pe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Working Hours -->
+                            <div>
+                                <p class="mb-1 text-[15px] font-bold uppercase text-primary brightness-125">Horario de
+                                    atencion
+                                </p>
+                                <p class="text-[14px]">Lunes - Viernes: 8:00 - 21:00</p>
+                                <p class="text-[14px]">Sabado: 8:00 - 12:00</p>
+                            </div>
+                            <div class="-ml-1 inline-flex pt-2">
+                                <a href="https://www.facebook.com/isurepps" target="_blank" class="animation-scale">
+                                    <img src="/assets/images/socials/facebook-icon.png" width="40" height="40">
+                                </a>
+                                <a href="https://www.linkedin.com/company/isur" target="_blank" class="animation-scale">
+                                    <img src="/assets/images/socials/linkedin-icon.png" width="43" height="43">
+                                </a>
+                                <a href="https://www.youtube.com/@ISURSAFETY" target="_blank" class="animation-scale">
+                                    <img src="/assets/images/socials/youtube-icon.png" width="44" height="44">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-paragraph py-3">
+                <p class="text-center text-[14px] text-white">ISUR 2024 | Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed bottom-4 right-4 flex flex-col items-center space-y-3 rounded-lg p-2 md:p-4">
+        <button id="go-top"
+            class="z-50 mb-2 hidden size-14 items-center justify-center rounded-full border-2 border-primary bg-primary text-white shadow-lg transition duration-300 ease-in-out lg:hover:brightness-90"
+            aria-label="Go to top" data-astro-cid-3arzalm5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevrons-up" data-astro-cid-3arzalm5="true">
+                <path d="m17 11-5-5-5 5"></path>
+                <path d="m17 18-5-5-5 5"></path>
+            </svg>
+        </button>
+        <astro-island uid="2ruTJG" prefix="r53" component-url="/_astro/WhatsAppButton.Njp978Zm.js"
+            component-export="WhatsappButton" renderer-url="/_astro/client.DtQD7m52.js"
+            props="{&quot;icon&quot;:[0,{&quot;src&quot;:[0,&quot;/_astro/whatsapp.0u1nUiVo.svg&quot;],&quot;width&quot;:[0,800],&quot;height&quot;:[0,800],&quot;format&quot;:[0,&quot;svg&quot;]}]}"
+            ssr="" client="load" opts="{&quot;name&quot;:&quot;WhatsappButton&quot;,&quot;value&quot;:true}"
+            await-children="">
+            <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground shadow size-14 rounded-full bg-[#128C7E] p-3.5 hover:bg-[#128C7E]/90"
+                type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r53R0:"
+                data-state="closed">
+                <img src="/_astro/whatsapp.0u1nUiVo.svg" width="30" height="30" />
+            </button>
+            <!--astro:end-->
+        </astro-island>
+    </div>
+</body>
+
+</html>
